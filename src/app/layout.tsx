@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import TabBar from "./TabBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +24,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="mx-auto flex flex-col items-center h-screen max-w-sm bg-background overflow-hidden relative w-full">
+          {children}
+          <TabBar />
+        </div>
       </body>
     </html>
   );
