@@ -140,15 +140,15 @@
     ]
   },
   {
-    "title": "청계천 개착 공사 1차 완료",
-    "description": "청계천 개착 공사 1차 완료.",
+    "title": "청계천 복원공사",
+    "description": "청계천 복원공사.",
     "location": [
       37.57295,
       126.979357
     ],
-    "date": "1412-02-00",
+    "date": "2003-07-01",
     "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cheonggyecheon_2011.jpg",
+    "image_url": "https://ko.wikipedia.org/wiki/%EC%B2%AD%EA%B3%84%EC%B2%9C#/media/%ED%8C%8C%EC%9D%BC:Seoul-Restoration_site_02.jpg",
     "ref_url": [
       "http://wiki.hash.kr/index.php/%EC%B2%AD%EA%B3%84%EC%B2%9C"
     ]
@@ -157,42 +157,42 @@
     "title": "한성부 청사를 광화문 앞으로 이전",
     "description": "한성부 청사를 광화문 앞으로 이전.",
     "location": [
-      37.57295,
-      126.979357
+      37.566944, 
+      126.966667
     ],
-    "date": "1421-05-00",
+    "date": "1896-05-00",
     "district": "종로구",
-    "image_url": "https://lembas.tistory.com/139/img/20180714151509-1.jpg",
+    "image_url": "https://img.hani.co.kr/imgdb/resize/2018/0824/153500113495_20180824.JPG",
     "ref_url": [
-      "https://dh.aks.ac.kr/Encyves/wiki/index.php/%ED%95%9C%EC%84%B1%EB%B6%80"
+      "https://encykorea.aks.ac.kr/Article/E0061730"
     ]
   },
   {
     "title": "앙부일구(仰釜日晷",
     "description": "앙부일구(仰釜日晷, 해시계)를 제작하여 혜정교(惠政橋)와 종묘(宗廟) 앞에 설치.",
     "location": [
-      37.57295,
-      126.979357
+      37.576667, 
+      126.975278
     ],
-    "date": "1433-08-00",
+    "date": "1434-10-01",
     "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Angbuilgu-Sundial-01.jpg",
+    "image_url": "https://ko.wikipedia.org/wiki/%EC%95%99%EB%B6%80%EC%9D%BC%EA%B5%AC#/media/%ED%8C%8C%EC%9D%BC:Seoul-Gyeongbokgung-Sundial-02.jpg",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%95%99%EB%B6%80%EC%9D%BC%EA%B5%AC"
+      "https://encykorea.aks.ac.kr/Article/E0035191"
     ]
   },
   {
     "title": "자격루(自擊漏",
     "description": "자격루(自擊漏, 물시계)를 제작하여 경복궁 보루각(報漏閣)에 설치.",
     "location": [
-      37.57295,
-      126.979357
+      37.5659,
+      126.9753
     ],
-    "date": "1434-07-00",
+    "date": "1434-10-01",
     "district": "종로구",
-    "image_url": "https://blogfiles.pstatic.net/20140106_177/moowon0112_1389010535091BfoEr_JPEG/%C0%DA%B0%DD%B7%E7.jpg",
+    "image_url": "https://ko.wikipedia.org/wiki/%EC%9E%90%EA%B2%A9%EB%A3%A8#/media/%ED%8C%8C%EC%9D%BC:BoRuGak_Jagyeongnu.JPG",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%9E%90%EA%B2%A9%EB%A3%A8"
+      "https://encykorea.aks.ac.kr/Article/E0023286"
     ]
   },
   {
@@ -202,11 +202,11 @@
       37.57295,
       126.979357
     ],
-    "date": "1460-05-00",
+    "date": "1467-05-00",
     "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wongaksa_Pagoda-01.jpg",
+    "image_url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%EC%9B%90%EA%B0%81%EC%82%AC%EC%A7%80_%EC%8B%AD%EC%B8%B5%EC%84%9D%ED%83%91#/media/%ED%8C%8C%EC%9D%BC:Wongaksa01.jpg",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%9B%90%EA%B0%81%EC%82%AC%EC%A7%80"
+      "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?pageNo=1_1_2_0&ccbaCpno=1111100020000"
     ]
   },
   {
