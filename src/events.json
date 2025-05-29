@@ -1,478 +1,249 @@
 [
   {
-    "title": "경복궁 창건 #1",
-    "description": "종로구에서 발생한 사건: 조선 태조 이성계가 한양 천도 후 건립한 조선 왕조의 정궁.",
-    "location": [
-      37.578675,
-      126.976904
-    ],
-    "date": "1459-01-23",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Gyeongbokgung_Geunjeongjeon.jpg",
-    "ref_url": [
-      "https://www.heritage.go.kr/heri/html/HtmlPage.do?pg=%2Fpalaces%2FpalacesRoyalInfo.jsp&pageNo=2_1_1_1"
-    ]
-  },
-  {
-    "title": "서대문형무소 설치 #1",
-    "description": "서대문구에서 발생한 사건: 일제강점기 조선총독부가 설치한 감옥으로 독립운동가들이 수감됨.",
-    "location": [
-      37.574934,
-      126.957245
-    ],
-    "date": "1813-07-04",
+    "title": "서대문형무소 역사관",
+    "description": "1908년 통감부의 강압으로 일제가 한성 서대문 인왕산 자락에 건립한 근대식 감옥입니다:contentReference[oaicite:0]{index=0}. 일제강점기 동안 수많은 독립운동가들이 수감·처형되었고, 1919년 3·1운동 후 유관순 열사도 투옥되어 이듬해 옥중 순국했습니다:contentReference[oaicite:1]{index=1}. 해방 이후에도 민주인사들이 투옥되었으며 1987년 폐쇄되었습니다. 현재는 역사관으로 개조되어 항일독립과 민주화의 투쟁 역사를 증언하고 있습니다.",
+    "location": [37.57417, 126.95583],
+    "date": "1945-08-15",
     "district": "서대문구",
-    "image_url": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13303149&menuNo=200018",
+    "image_url": "https://mediahub.seoul.go.kr/uploads/mediahub/2024/02/OUaPtGOzDfRkhssDsIbNxSpRfJgzxWFU.jpg",
     "ref_url": [
-      "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13303149&menuNo=200018"
+      "https://mediahub.seoul.go.kr/archives/2010425",
+      "http://www.ktv.go.kr/content/view?content_id=501300",
+      "https://www.heritage.go.kr/heri/cul/culSelectDetail.do;jsessionid=U1r55xs7a2avhBjla4jq5lCy1bQsmZz3B9FyuGejVee1J0UrlOfIPv1MflHu04Xt.cpawas2_servlet_engine1?pageNo=1_1_2_0&ccbaCpno=1331103240000"
     ]
   },
   {
-    "title": "3·1운동 서대문 만세 시위 #1",
-    "description": "서대문구에서 발생한 사건: 1919년 서대문형무소 앞에서 시작된 대규모 독립운동 시위.",
-    "location": [
-      37.574016,
-      126.957298
-    ],
-    "date": "1491-10-17",
+    "title": "독립문",
+    "description": "1897년 11월 20일 자주독립을 기념하며 완공된 석조 아치문으로:contentReference[oaicite:2]{index=2}, 청나라 사신을 맞던 영은문을 헐고 그 자리(현 현저동)에 세웠습니다. 독립협회 주도로 국민 모금과 고종의 지원을 받아 건립되었으며:contentReference[oaicite:3]{index=3}, 을사조약 등 국권 침탈에 맞선 자주독립 의지를 상징합니다. 일제강점기에는 일제가 조선 식민화의 명분으로 악용하려 했으나, 광복 후 독립운동의 유산으로서 보호되고 있습니다.",
+    "location": [37.5725, 126.95972],
+    "date": "1897-11-20",
     "district": "서대문구",
-    "image_url": "https://www.asiae.co.kr/article/2024022812093790209",
+    "image_url": "https://love.seoul.go.kr/tmda/Pds/Board/seoul_news_write/article_201908_09_1200_1.jpg",
     "ref_url": [
-      "https://www.asiae.co.kr/article/2024022812093790209"
+      "https://love.seoul.go.kr/articles/6815",
+      "https://encykorea.aks.ac.kr/Article/E0015980",
+      "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?pageNo=1_1_2_0&ccbaCpno=1331100320000",
+      "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_r400100&code=kc_age_40"
     ]
   },
   {
-    "title": "한강 개발 사업 #1",
-    "description": "영등포구에서 발생한 사건: 1970년대 서울시가 주도한 한강 종합개발 사업으로 시민 여가공간 조성.",
-    "location": [
-      37.526959,
-      126.932504
-    ],
-    "date": "1429-03-10",
-    "district": "영등포구",
-    "image_url": "https://www.khan.co.kr/article/201609171018001",
+    "title": "서대문독립공원",
+    "description": "1992년 8월 15일 광복절에 개원한 역사공원입니다:contentReference[oaicite:4]{index=4}. 일제강점기 동안 서대문형무소가 있던 자리에 조성되어, 옥중 고초를 겪은 독립운동가들의 투쟁을 기리는 공간입니다. 공원 안에는 사적 서대문형무소 역사관을 비롯해 3·1독립선언기념탑, 순국선열추념탑(높이 22.3m) 등 여러 독립운동 기념물이 자리합니다:contentReference[oaicite:5]{index=5}. 2009년 재정비되어 시민을 위한 역사교육의 장이자 휴식 공간으로 거듭났습니다.",
+    "location": [37.5715, 126.957],
+    "date": "1992-08-15",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%EC%84%9C%EB%8C%80%EB%AC%B8%EB%8F%85%EB%A6%BD%EA%B3%B5%EC%9B%90%EC%9D%98_%EB%AA%A8%EC%8A%B5.jpg",
     "ref_url": [
-      "https://www.khan.co.kr/article/201609171018001"
+      "https://ko.wikipedia.org/wiki/%EC%84%9C%EB%8C%80%EB%AC%B8%EB%8F%85%EB%A6%BD%EA%B3%B5%EC%9B%90",
+      "https://www.sdm.go.kr/culture/attraction/sub2030.do"
     ]
   },
   {
-    "title": "서울 올림픽 개최 #1",
-    "description": "송파구에서 발생한 사건: 1988년 서울 송파구에서 열린 제24회 하계 올림픽.",
-    "location": [
-      37.519893,
-      127.113855
-    ],
-    "date": "1403-04-15",
-    "district": "송파구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Seoul_Olympic_Park.jpg",
+    "title": "봉원사",
+    "description": "조선 영조 24년(1748)에 지금의 안산 기슭으로 이전된 고찰로, 영조 임금이 ‘봉원사’라는 친필 현판을 하사했습니다:contentReference[oaicite:6]{index=6}. 이후 ‘새절’로 불리며 불교계의 거점 역할을 했습니다. 1884년 조선 개화파 인사들이 승려 이동인과 함께 교류하던 장소로 갑신정변의 모태가 되기도 했습니다:contentReference[oaicite:7]{index=7}. 일제강점기에도 불교계 항일 운동이 이어졌고, 한국전쟁 때는 전각들이 소실되는 수난을 겪었습니다. 현재 한국불교 태고종 총본산으로서 전통을 잇고 있습니다.",
+    "location": [37.57222, 126.94694],
+    "date": "1884-12-04",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Korea-Seoul-Bongwon_Temple-01.jpg",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/1988년_하계_올림픽"
+      "https://encykorea.aks.ac.kr/Article/E0023976",
+      "https://www.sdm.go.kr/culture/attraction/sub2100.do",
+      "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?pageNo=1_1_2_0&ccbaCpno=2111103630000"
     ]
   },
   {
-    "title": "청계천 복원 #1",
-    "description": "종로구에서 발생한 사건: 2005년 서울시가 청계천을 복원하여 도심 생태와 시민 공간을 회복.",
-    "location": [
-      37.570369,
-      126.992263
-    ],
-    "date": "1869-03-28",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cheonggyecheon_2011.jpg",
+    "title": "연세대학교 신촌캠퍼스",
+    "description": "일제강점기인 1915년 세브란스의학전문과와 연희전문학교의 설립으로 시작된 한국 최초의 근대식 대학 중 하나입니다. 1920년 신촌에 석조 본관(스팀슨관)이 준공되고, 1924년 언더우드관 등 고딕식 교사가 완공되어 민족교육의 산실이 되었습니다:contentReference[oaicite:8]{index=8}. 1987년 6월 9일 교내 시위 도중 이한열 열사가 최루탄에 피격되어 후에 사망하였고, 이는 6월 민주항쟁의 도화선이 되었습니다:contentReference[oaicite:9]{index=9}. 수많은 독립운동가와 민주지도자를 배출한 역사적 대학입니다.",
+    "location": [37.56578, 126.9386],
+    "date": "1987-06-09",
+    "district": "서대문구",
+    "image_url": "https://i.namu.wiki/i/DtMlflCZZHx5LVTIAfWMstz0PpmgaBPGCumFXyGMSYVnktzUvt1eU2Z2fq8HyoPZ9-OFcOoGHUqGJtccpSEJmg.webp",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/청계천"
+      "https://www.tripadvisor.co.kr/Attraction_Review-g294197-d13138039-Reviews-Yonsei_University_Sinchon_Campus-Seoul.html",
+      "https://www.yonsei.ac.kr/",
+      "https://ko.wikipedia.org/wiki/%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90_%EC%8B%A0%EC%B4%8C%EC%BA%A0%ED%8D%BC%EC%8A%A4"
     ]
   },
   {
-    "title": "용산참사 #1",
-    "description": "용산구에서 발생한 사건: 2009년 용산 재개발 지역에서 강제철거를 둘러싼 충돌로 인해 발생한 인명 피해 사건.",
-    "location": [
-      37.534468,
-      126.967071
-    ],
-    "date": "1922-02-10",
-    "district": "용산구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Yongsan_tragedy_memorial_altar.jpg",
+    "title": "이화여자대학교",
+    "description": "1886년 미국 감리교 선교사 메리 스크랜튼이 서울 정동에 설립한 한국 최초의 여성교육 기관인 이화학당이 모태입니다:contentReference[oaicite:10]{index=10}. 1935년 현 신촌캠퍼스로 이전하여 근대 여성 고등교육을 선도했습니다. 을사늑약 이후 학생·교사들이 조국독립을 기원하는 기도회와 시국강연회를 여는 등 애국계몽 활동을 펼쳤으며:contentReference[oaicite:11]{index=11}, 1919년 3·1운동 당시 유관순을 비롯한 재학생들이 만세시위에 적극 참여했습니다:contentReference[oaicite:12]{index=12}. 많은 여성 독립운동가와 사회지도자를 배출한 학교로, 현재도 ‘이화’의 이름 아래 여성교육의 역사를 이어가고 있습니다.",
+    "location": [37.5571, 126.9414],
+    "date": "1886-05-31",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90_%EC%82%AC%EC%A7%84.jpg/960px-%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90_%EC%82%AC%EC%A7%84.jpg?20230926025348",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/용산_참사"
+      "https://ko.wikipedia.org/wiki/%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90",
+      "https://terms.naver.com/entry.naver?docId=536639&cid=71165&categoryId=71165",
+      "https://ko.wikipedia.org/wiki/%EC%9D%B4%ED%99%94%ED%95%99%EB%8B%B9"
     ]
   },
   {
-    "title": "창덕궁(昌德宮) 창건 공사 시작",
-    "description": "창덕궁(昌德宮) 창건 공사 시작.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1404-09-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Changdeokgung_Injeongjeon.jpg",
+    "title": "안산 봉수대",
+    "description": "조선 초기에 축조된 봉수대(봉화대)로, 서울 도성 서쪽의 통신망 거점이었습니다. 서대문 안산 정상에 동봉수와 서봉수 두 기가 마주보고 설치되어, 하나는 육로를 통해 평안도·황해도 방면의 봉수와 연결되고 다른 하나는 해로 방면과 연결되었습니다:contentReference[oaicite:13]{index=13}:contentReference[oaicite:14]{index=14}. 임진왜란 등 국난 시 봉화를 올려 침입을 알리는 통신 역할을 했습니다. 1894년 봉수제 폐지 후 기능을 잃었으나, 현재 봉수대 터는 남아 있으며 1993년 서울시 기념물 제13호로 지정되어 보존되고 있습니다:contentReference[oaicite:15]{index=15}.",
+    "location": [37.57667, 126.945],
+    "date": "1592-04-13",
+    "district": "서대문구",
+    "image_url": "https://www.sdm.go.kr/fileUpload/ckeditor/Images/20121130_1171330831948868.JPG",
     "ref_url": [
-      "https://digital.khs.go.kr/heri/heriDetail.do?ctptUid=13898859666551200073&ctptNo=1111102250000"
+      "https://www.sdm.go.kr/educate/naturepark.do?mode=view&sdmBoardSeq=379&",
+      "https://www.seouland.com/arti/society/society_general/1985.html",
+      "https://mediahub.seoul.go.kr/archives/1284345"
     ]
   },
   {
-    "title": "창덕궁 완공",
-    "description": "창덕궁 완공. 경복궁의 정궁 기능을 보완하는 이궁(離宮)으로 사용.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1405-10-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Changdeokgung_Injeongjeon.jpg",
+    "title": "홍지문과 탕춘대성",
+    "description": "조선 숙종 41년(1715) 한양 서북방 산성 방어를 강화하기 위해 축조된 홍지문은 북한산성과 한양도성을 보완하는 산성문입니다. 인왕산 북쪽 홍제천 상류에 세워져 ‘한북문’으로도 불렸으며, 5개 아치형 수문을 갖춘 오간수문과 연결되어 있습니다. 1921년 폭우로 홍지문과 오간수문이 무너졌으나 이후 원형을 살려 복원되었습니다:contentReference[oaicite:16]{index=16}:contentReference[oaicite:17]{index=17}. 현재 홍지문 일대 성벽(탕춘대성)과 홍지문은 서울시 유형문화유산으로 지정되어 있어, 조선시대 서울 외곽 방어시설의 역사를 전하고 있습니다.",
+    "location": [37.6, 126.95583],
+    "date": "1921-07-11",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Korea_RainyDay_Seoul_12_%2813884837119%29.jpg/960px-Korea_RainyDay_Seoul_12_%2813884837119%29.jpg?20140701005407",
     "ref_url": [
-      "https://digital.khs.go.kr/heri/heriDetail.do?ctptUid=13898859666551200073&ctptNo=1111102250000"
+      "https://ko.wikipedia.org/wiki/%ED%99%8D%EC%A7%80%EB%AC%B8_%EB%B0%8F_%ED%83%95%EC%B6%98%EB%8C%80%EC%84%B1",
+      "https://dk-choi.tistory.com/5882794",
+      "https://encykorea.aks.ac.kr/Article/E0064435"
     ]
   },
   {
-    "title": "청계천(淸溪川) 개착 공사 시작",
-    "description": "청계천(淸溪川) 개착 공사 시작.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1412-01-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cheonggyecheon_2011.jpg",
+    "title": "아현감리교회",
+    "description": "1888년 12월 선교사 윌리엄 스크랜턴이 서울 성문 밖 아현 지역에 세운 시약소(간이병원)에서 출발한 개신교 교회로, '성문밖 첫 교회'로 불립니다:contentReference[oaicite:18]{index=18}. 스크랜턴의 선한 사마리아인 정신으로 가난한 환자들을 치료하며 복음을 전하던 이 곳은 점차 예배 모임으로 발전하여 정식 감리교회로 설립되었습니다. 구한말부터 빈민 구제와 여성·고아 교육 등 사회사업에 힘썼고, 일제강점기 신앙을 지키며 항일 정신을 이어갔습니다. 6·25전쟁 중 교회당이 소실되었으나 이후 재건되었으며, 현재 창립 130여 년의 역사를 간직한 교회입니다.",
+    "location": [37.559, 126.955],
+    "date": "1888-12-25",
+    "district": "서대문구",
+    "image_url": "https://cdn.imweb.me/thumbnail/20230118/bf5c99beb19d3.jpg",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/청계천"
+      "http://www.dangdangnews.com/news/articleView.html?idxno=26252",
+      "https://ahyun.net/223",
+      "https://encykorea.aks.ac.kr/Article/E0076582"
     ]
   },
   {
-    "title": "청계천 개착 공사 1차 완료",
-    "description": "청계천 개착 공사 1차 완료.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1412-02-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cheonggyecheon_2011.jpg",
+    "title": "서울 옥천암 마애보살좌상",
+    "description": "고려 시대에 조성된 높이 약 5m의 마애 보살상으로, 서대문구 홍제동 옥천암 경내 바위에 새겨져 있습니다. 전체 면에 백색 안료를 발라 ‘백불(白佛)’이라고도 불렸으며, 온화한 얼굴과 당당한 신체 표현 등 고려 후기 불상의 특징을 잘 보여줍니다. 1973년 서울시 유형문화재로 지정되었다가, 2014년 3월 11일 대한민국 보물 제1820호로 승격 지정되었습니다:contentReference[oaicite:19]{index=19}. 현재 옥천암 경내에 보호되어 있어, 도시 속에서 고려 불교조각의 뛰어난 예술성과 신앙 세계를 전하고 있습니다.",
+    "location": [37.569, 126.939],
+    "date": "2014-03-11",
+    "district": "서대문구",
+    "image_url": "https://www.heritage.go.kr/unisearch/images/treasure/thumb/1615048.jpg?time=1748434285973",
     "ref_url": [
-      "http://wiki.hash.kr/index.php/%EC%B2%AD%EA%B3%84%EC%B2%9C"
+      "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%EC%98%A5%EC%B2%9C%EC%95%94_%EB%A7%88%EC%95%A0%EB%B3%B4%EC%82%B4%EC%A2%8C%EC%83%81",
+      "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1121118200000&pageNo=1_1_2_0&",
+      "https://encykorea.aks.ac.kr/Article/E0023252"
     ]
   },
   {
-    "title": "한성부 청사를 광화문 앞으로 이전",
-    "description": "한성부 청사를 광화문 앞으로 이전.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1421-05-00",
-    "district": "종로구",
-    "image_url": "https://lembas.tistory.com/139/img/20180714151509-1.jpg",
+    "title": "연세대학교 스팀슨관",
+    "description": "1920년 준공된 연희전문학교(현 연세대) 최초의 교사(校舍) 건물입니다. 미국인 선교사 스팀슨의 공헌을 기려 이름 붙였으며, 붉은 벽돌과 화강암으로 지은 2층 건물입니다. 연희전문 학생들은 이곳에서 수학하며 민족의식을 키웠고, 1945년 광복 당시 교정에서 학생들이 독립만세를 외치기도 했습니다. 1981년 사적 제275호로 지정되었으며:contentReference[oaicite:20]{index=20}, 6·25전쟁 때 총탄 흔적을 간직한 채 복원되었습니다. 현재 연세대학교 캠퍼스에서 가장 오래된 근대 건축물로, 학교 역사의 산증인입니다.",
+    "location": [37.5665, 126.9383],
+    "date": "1920-08-20",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/연세대학교_스팀슨관.jpg/800px-연세대학교_스팀슨관.jpg",
     "ref_url": [
-      "https://dh.aks.ac.kr/Encyves/wiki/index.php/%ED%95%9C%EC%84%B1%EB%B6%80"
+      "https://ko.wikipedia.org/wiki/%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90_%EC%8A%A4%ED%8C%80%EC%8A%A8%EA%B4%80",
+      "https://blog.naver.com/monami326/222092428603",
+      "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1331102750000"
     ]
   },
   {
-    "title": "앙부일구(仰釜日晷",
-    "description": "앙부일구(仰釜日晷, 해시계)를 제작하여 혜정교(惠政橋)와 종묘(宗廟) 앞에 설치.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1433-08-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Angbuilgu-Sundial-01.jpg",
+    "title": "연세대학교 아펜젤러관",
+    "description": "1924년 완공된 고딕풍 3층 석조 건물로, 연희전문학교의 두 번째 교사입니다:contentReference[oaicite:21]{index=21}. 배재학당 설립자 아펜젤러를 기념하여 미국 매사추세츠주 시민들의 기부로 지어졌으며:contentReference[oaicite:22]{index=22}, 언더우드관과 함께 캠퍼스 중심축을 형성합니다. 강의동으로 사용되다가 현재 행정관으로 활용되고 있으며, 1981년 사적 제277호로 지정되었습니다. 일제강점기 학생들이 이곳에서 민족계몽운동에 참여했고, 6·25전쟁 중에도 견뎌낸 학교의 상징적 건물입니다.",
+    "location": [37.5668, 126.9389],
+    "date": "1924-10-01",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/연세대학교_아펜젤러관.jpg/800px-연세대학교_아펜젤러관.jpg",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%95%99%EB%B6%80%EC%9D%BC%EA%B5%AC"
+      "https://www.sdmcc.co.kr/Heritage/?bmode=view&idx=17890932",
+      "https://blog.naver.com/kal8089/222460146170",
+      "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1331102770000"
     ]
   },
   {
-    "title": "자격루(自擊漏",
-    "description": "자격루(自擊漏, 물시계)를 제작하여 경복궁 보루각(報漏閣)에 설치.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1434-07-00",
-    "district": "종로구",
-    "image_url": "https://blogfiles.pstatic.net/20140106_177/moowon0112_1389010535091BfoEr_JPEG/%C0%DA%B0%DD%B7%E7.jpg",
+    "title": "연세대학교 언더우드관",
+    "description": "1925년 6월 준공된 연희전문학교 본관으로, 연세대 캠퍼스의 상징적인 중앙 건물입니다:contentReference[oaicite:23]{index=23}. 언더우드 초대 총장의 이름을 따 지었으며, 중앙에 탑이 솟은 5층 부분과 좌우 3층 날개동으로 구성된 장방형 구조입니다:contentReference[oaicite:24]{index=24}. 해방 전후로 민족교육과 의료교육의 요람이었고, 6·25 때는 한때 인민군에 점거되었다 유엔군에 탈환되는 등 격전의 현장이 되었습니다. 광복 후 연세대 본부로 사용되었으며, 1981년 사적 제276호로 지정되어 근대 교육 건축물로 보호되고 있습니다.",
+    "location": [37.5677, 126.9395],
+    "date": "1925-06-20",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Yonsei_University_Underwood_Hall_2013.JPG/800px-Yonsei_University_Underwood_Hall_2013.JPG",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%9E%90%EA%B2%A9%EB%A3%A8"
+      "https://ko.wikipedia.org/wiki/%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90_%EC%96%B8%EB%8D%94%EC%9A%B0%EB%93%9C%EA%B4%80",
+      "https://www.sdmcc.co.kr/Heritage/?bmode=view&idx=17890932",
+      "https://blog.naver.com/kal8089/222460146170"
     ]
   },
   {
-    "title": "원각사(圓覺寺",
-    "description": "원각사(圓覺寺, 현 탑골공원) 창건 시작.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1460-05-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wongaksa_Pagoda-01.jpg",
+    "title": "홍제동 개미마을",
+    "description": "1970년대 인왕산 남쪽 홍제동 언덕에 형성된 달동네로, 서울시 마지막 남은 판자촌 중 하나입니다. 한국전쟁 전후 도시화 과정에서 살 곳을 잃은 서민들이 산비탈에 모여 살며 ‘개미처럼 부지런하다’ 하여 개미마을로 불렸습니다. 상하수도 등 기본시설도 없이 빈민들이 밀집하여 살았으며, 1980년대까지 재개발에서 소외된 채 서울의 빈곤 현장을 대변했습니다. 2000년대 이후 담장벽화가 조성되고 일부 주택 개선이 이루어졌으나 주민 상당수는 고령층으로 남아 있습니다. 서울의 옛 달동네 풍경과 애환을 간직한 곳으로 유명하며, 2020년대 들어 공공주택 재개발 사업이 추진되고 있습니다.",
+    "location": [37.589, 126.943],
+    "date": "1975-01-01",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Hongje-dong_Gaemi_Maul_Seoul.jpg/800px-Hongje-dong_Gaemi_Maul_Seoul.jpg",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%9B%90%EA%B0%81%EC%82%AC%EC%A7%80"
+      "https://news.mt.co.kr/mtview.php?no=2021073009520669880",
+      "https://weekly.khan.co.kr/khnm.html?mode=view&artid=202111171759561&code=116",
+      "https://ncms.nculture.org/view/1004025"
     ]
   },
   {
-    "title": "창경궁(昌慶宮) 창건",
-    "description": "창경궁(昌慶宮) 창건. (수강궁을 확장하여 지음)",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1484-11-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Changgyeonggung-Myeongjeongjeon.jpg",
+    "title": "감리교신학대학교",
+    "description": "1887년 배재학당 내에 개설된 전도인 양성반을 모태로 하는 한국 최초의 신학 교육기관입니다:contentReference[oaicite:25]{index=25}. 1907년 ‘협성신학교’로 공식 출범하여 감리교 목회자와 신학자를 양성해 왔습니다. 1959년 서대문구 충정로 일대 현 캠퍼스로 교사를 마련했으며:contentReference[oaicite:26]{index=26}, 일찍이 1925년 남녀공학을 도입하여 국내 최초의 남녀 통합 신학교육을 실시했습니다:contentReference[oaicite:27]{index=27}. 일제강점기 수많은 졸업생들이 독립운동과 항일운동에 가담했고, 해방 후에도 민주화운동에 적극 참여하는 등 민족과 교회의 양심을 지켜온 신학교입니다. 현재까지 한국 감리교회의 핵심 인재들을 배출하며 130년 넘는 전통을 이어가고 있습니다.",
+    "location": [37.567, 126.956],
+    "date": "1907-06-01",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/감리교신학대학교_웨슬리채플.jpg/800px-감리교신학대학교_웨슬리채플.jpg",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EB%B6%84%EB%A5%98:%EC%B0%BD%EA%B2%BD%EA%B6%81"
+      "https://encykorea.aks.ac.kr/Article/E0033572",
+      "http://www.kmib.co.kr/news/view.asp?arcid=0923904377",
+      "https://www.donga.com/news/Society/article/all/20220307/112194977/1"
     ]
   },
   {
-    "title": "왜군",
-    "description": "왜군, 한양 무혈입성. 경복궁, 창덕궁, 창경궁 등 궁궐과 종묘, 사직 소실.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1592-05-02",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/The_Battle_of_Imjin_River_1592.jpg",
+    "title": "영천시장 (떡전거리)",
+    "description": "서대문형무소 인근에 위치한 전통시장으로, 일제강점기부터 ‘떡전거리’로 불렸던 곳입니다. 과거 서대문감옥에 수감된 독립운동가들에게 가족들이 떡을 넣어주기 위해 이 부근에 떡 장수가 모여들었고, 자연스럽게 떡 전문 시장이 형성되었습니다:contentReference[oaicite:28]{index=28}. 1960년대 초 재래시장이 정식 조성되었으며, 특히 떡과 한과 도매로 유명했습니다. 광복 이후에도 시민들의 먹거리 시장으로 활발히 운영되었고, 최근에는 청년층에게도 입소문을 타는 명소가 되었습니다. 시장 주변에는 일제에 항거한 순국선열들을 기리는 독립공원과 옛 한옥골목 등이 공존하여, 근현대 역사의 흔적을 느낄 수 있는 공간입니다.",
+    "location": [37.5683, 126.959],
+    "date": "1963-01-01",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Seoul_Yeongcheon_Market.JPG/800px-Seoul_Yeongcheon_Market.JPG",
     "ref_url": [
-      "https://busan.grandculture.net/Contents/Contents?dataType=01&contents_id=GC04204428&isTreeSpread=Y&RequestBy=%ED%95%AD%EB%AA%A9%EB%A7%81%ED%81%AC&gcode="
+      "https://www.donga.com/news/Society/article/all/20220307/112194977/1",
+      "https://www.pressian.com/pages/articles/2020092815540519010",
+      "https://weekly.khan.co.kr/khnm.html?mode=view&artid=202104271413591&code=115"
     ]
   },
   {
-    "title": "경운궁(慶運宮",
-    "description": "경운궁(慶運宮, 현 덕수궁) 중건 시작.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1608-07-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Deoksugung_Palace.jpg",
+    "title": "연희동 104고지 전투지",
+    "description": "1950년 9월 한국전쟁 당시 서울 탈환 작전에서 치열한 전투가 벌어진 연희동의 언덕 지대입니다. 인천상륙작전을 감행한 유엔군은 서울 서측에서 북한군을 압박했고, 9월 18~19일 사이 미 해병대 등이 연희동 104고지에서 격전을 치렀습니다. 고지의 북한군 진지를 빼앗기 위한 백병전과 포격전 끝에 유엔군이 고지를 점령함으로써, 서대문-마포 일대의 북한군 방어선이 무너졌습니다. 이 전투 승리로 9월 28일 서울이 조기에 수복되는 데 크게 기여했습니다:contentReference[oaicite:29]{index=29}. 현재 고지 일대는 주택지로 변화되었으나, 전투를 기념하는 표석 등이 세워져 있습니다.",
+    "location": [37.574, 126.93],
+    "date": "1950-09-19",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Korean_War_Seoul_recapture.jpg/800px-Korean_War_Seoul_recapture.jpg",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EB%8D%95%EC%88%98%EA%B6%81"
+      "https://www.usmilitaryhistory.com/korean-war-seoul-recapture",
+      "https://hinykorea.com/townnews/230526ny1/",
+      "https://naverkbs.secureweb.kr/617"
     ]
   },
   {
-    "title": "창덕궁 인정전(仁政殿) 중건",
-    "description": "창덕궁 인정전(仁政殿) 중건.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1610-08-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Changdeokgung_Injeongjeon.jpg",
+    "title": "청수관 터 (일본공사관 터)",
+    "description": "서대문구 천연동 금화초등학교 부근에 위치한 표석으로, 조선 후기 외세의 격변을 보여주는 현장입니다. 본래 이곳에는 조선시대 경기중군영이 주둔한 청수관이 있었는데, 1880년 이 일대를 일본이 점령하여 조선 최초의 일본공사관으로 사용했습니다:contentReference[oaicite:30]{index=30}. 1882년 임오군란 때 분노한 구식 군인들과 시민들이 이 일본공사관을 습격·방화하여 건물이 소실되는 사건이 발생했습니다:contentReference[oaicite:31]{index=31}. 지금은 공사관 터에 기념 표석이 세워져 있으며, 인근에 남아있는 ‘천연정’ 터와 함께 개항기 조선의 주권 수호 노력과 외세의 침탈을 기억하는 장소가 되고 있습니다.",
+    "location": [37.5685, 126.957],
+    "date": "1882-07-23",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cheongsugwan_Site_Plaque.jpg/800px-Cheongsugwan_Site_Plaque.jpg",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%B0%BD%EB%8D%95%EA%B6%81"
+      "https://www.donga.com/news/Society/article/all/20220307/112194977/1",
+      "https://encykorea.aks.ac.kr/Article/E0042154",
+      "https://terms.naver.com/entry.naver?docId=947935&cid=42856&categoryId=42856"
     ]
   },
   {
-    "title": "경운궁(덕수궁) 즉조당(卽祚堂)",
-    "description": "경운궁(덕수궁) 즉조당(卽祚堂), 석어당(昔御堂) 등 주요 전각 완공.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1611-09-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Jeukjodang_at_Deoksugung_Palace%2C_Seoul.jpg",
+    "title": "서대문성당",
+    "description": "1958년 부지 매입 후 1959년 구 냉천동 한양정미소 건물을 개조하여 설립된 가톨릭 성당으로, 서울대교구 중서울지구에 속합니다:contentReference[oaicite:32]{index=32}. 6·25전쟁 이후 서대문 지역 주민들의 신앙공동체로 출발하여, 1960년대 본당을 신축하였고 주보성인은 성 베드로입니다:contentReference[oaicite:33]{index=33}. 이 성당은 한때 인근 독립공원의 역사성과 맞물려, 민주화운동 시대에 미사 중 민주주의와 인권을 위한 기도가 이어지던 공간이었습니다. 오랜 세월 지역사회 봉사와 신앙의 중심으로 기능해왔으며, 현재 역사와 공동체 전통을 간직한 본당 건물이 리모델링되어 서대문구의 가톨릭 신앙생활을 이끌고 있습니다.",
+    "location": [37.568, 126.957],
+    "date": "1959-04-01",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seodaemun_Catholic_Church.JPG/800px-Seodaemun_Catholic_Church.JPG",
     "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EB%8D%95%EC%88%98%EA%B6%81"
-    ]
-  },
-  {
-    "title": "경덕궁(慶德宮",
-    "description": "경덕궁(慶德宮, 현 경희궁)의 이름을 경희궁(慶熙宮)으로 변경.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1740-08-00",
-    "district": "종로구",
-    "image_url": "https://dapsa.kr/blog/wp-content/uploads/2024/03/서궐도안.jpg",
-    "ref_url": [
-      "https://dh.aks.ac.kr/Encyves/wiki/index.php/%EA%B2%BD%ED%9D%AC%EA%B6%81"
-    ]
-  },
-  {
-    "title": "청계천 준설 공사 시작 (갑자년 대준천)",
-    "description": "청계천 준설 공사 시작 (갑자년 대준천).",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1744-08-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cheonggyecheon_2011.jpg",
-    "ref_url": [
-      "http://wiki.hash.kr/index.php/%EC%B2%AD%EA%B3%84%EC%B2%9C"
-    ]
-  },
-  {
-    "title": "청계천 대대적 준설 및 양안 석축 공사 완료",
-    "description": "청계천 대대적 준설 및 양안 석축 공사 완료.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1760-02-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cheonggyecheon_2011.jpg",
-    "ref_url": [
-      "http://wiki.hash.kr/index.php/%EC%B2%AD%EA%B3%84%EC%B2%9C"
-    ]
-  },
-  {
-    "title": "경복궁 중건 공사 시작",
-    "description": "경복궁 중건 공사 시작.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1865-04-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Gyeongbokgung_Geunjeongjeon.jpg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B3%B5%EA%B6%81"
-    ]
-  },
-  {
-    "title": "경복궁 근정전 완공",
-    "description": "경복궁 근정전 완공.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1867-07-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Gyeongbokgung_Geunjeongjeon.jpg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B3%B5%EA%B6%81"
-    ]
-  },
-  {
-    "title": "을미사변(乙未事變) 발생",
-    "description": "을미사변(乙未事變) 발생. 일본 낭인들, 경복궁 난입하여 명성황후 시해.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1895-08-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Queen_Myeongseong.jpg/220px-Queen_Myeongseong.jpg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%9D%84%EB%AF%B8%EC%82%AC%EB%B3%80"
-    ]
-  },
-  {
-    "title": "독립문(獨立門) 정초식",
-    "description": "독립문(獨立門) 정초식.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1896-11-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Arch_of_Independence_Seoul.jpg/1200px-Arch_of_Independence_Seoul.jpg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EB%8F%85%EB%A6%BD%EB%AC%B8"
-    ]
-  },
-  {
-    "title": "고종",
-    "description": "고종, 경운궁(덕수궁)으로 환궁.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1897-02-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gojong_of_Korea.jpg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EA%B3%A0%EC%A2%85_(%EB%8C%80%ED%95%9C%EC%A0%9C%EA%B5%AD)"
-    ]
-  },
-  {
-    "title": "한강철교 준공",
-    "description": "한강철교 준공.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1900-07-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Han_River_Railway_Bridge_1900.jpg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B0%95%EC%B2%A0%EA%B5%90"
-    ]
-  },
-  {
-    "title": "3·1 운동 발생",
-    "description": "3·1 운동 발생. 탑골공원에서 독립선언서 낭독, 전국적 만세 시위 확산.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1919-03-01",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/1919_3_1_movement.jpg/300px-1919_3_1_movement.jpg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/3%C2%B71_%EC%9A%B4%EB%8F%99"
-    ]
-  },
-  {
-    "title": "서울대학교 개교 (경성제국대학 등 통합)",
-    "description": "서울대학교 개교 (경성제국대학 등 통합).",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1946-08-15",
-    "district": "종로구",
-    "image_url": "https://commons.wikimedia.org/wiki/File:%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90.svg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%EC%9D%98_%EC%97%AD%EC%82%AC"
-    ]
-  },
-  {
-    "title": "서울 지하철 1호선 (서울역~청량리) 및 수도권 전철 개통",
-    "description": "서울 지하철 1호선 (서울역~청량리) 및 수도권 전철 개통.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "1974-08-15",
-    "district": "종로구",
-    "image_url": "https://commons.wikimedia.org/wiki/File:Seoul_Metro_Line_1.svg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%EC%A7%80%ED%95%98%EC%B2%A0_1%ED%98%B8%EC%84%A0"
-    ]
-  },
-  {
-    "title": "청계천 복원 사업 완료 및 개장",
-    "description": "청계천 복원 사업 완료 및 개장.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "2005-10-00",
-    "district": "종로구",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cheonggyecheon_2011.jpg",
-    "ref_url": [
-      "https://www.archives.go.kr/next/newsearch/listSubjectDescription.do?id=006448&sitePage="
-    ]
-  },
-  {
-    "title": "숭례문(남대문) 방화 사건",
-    "description": "숭례문(남대문) 방화 사건.",
-    "location": [
-      37.57295,
-      126.979357
-    ],
-    "date": "2008-02-10",
-    "district": "종로구",
-    "image_url": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC:%EB%82%A8%EB%8C%80%EB%AC%B8%ED%99%94%EC%9E%AC%ED%8E%B8%EC%A7%9102.jpg",
-    "ref_url": [
-      "https://ko.wikipedia.org/wiki/%EC%88%AD%EB%A1%80%EB%AC%B8_%EB%B0%A9%ED%99%94_%EC%82%AC%EA%B1%B4"
+      "http://directory.cbck.or.kr/OnlineAddressDetail.aspx?SEARCH=d&CID=41466",
+      "https://lovecatholic.kr/xe/?document_srl=182660&mid=sanctuary&sort_index=readed_count&order_type=desc",
+      "https://www.sdmcc.co.kr/history/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=2159838"
     ]
   }
 ]
