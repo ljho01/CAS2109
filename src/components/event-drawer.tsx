@@ -5,12 +5,12 @@ import {
   DrawerDescription,
   DrawerFooter,
   DrawerClose,
-} from "@/components/ui/drawer"
-import { ChevronLeft } from "lucide-react"
-import Image from "next/image"
-import { useState } from "react"
-import { Button } from "./ui/button"
-import { motion, AnimatePresence } from "framer-motion"
+} from "@/components/ui/drawer";
+import { ChevronLeft } from "lucide-react";
+import Image from "next/image";
+import { useState } from "react";
+import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 
 interface EventData {
   title: string;
@@ -35,9 +35,9 @@ export function EventDrawer({ events }: EventDrawerProps) {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -48,15 +48,15 @@ export function EventDrawer({ events }: EventDrawerProps) {
       transition: {
         type: "spring",
         stiffness: 300,
-        damping: 30
-      }
-    }
+        damping: 30,
+      },
+    },
   };
 
   if (selectedEvent) {
     return (
       <DrawerContent className="max-w-md mx-auto">
-        <motion.div 
+        <motion.div
           className="max-h-[95vh] overflow-y-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -79,25 +79,27 @@ export function EventDrawer({ events }: EventDrawerProps) {
                 목록으로
               </Button>
             </motion.div>
-            
+
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              <DrawerTitle className="text-xl">{selectedEvent.title}</DrawerTitle>
+              <DrawerTitle className="text-xl">
+                {selectedEvent.title}
+              </DrawerTitle>
             </motion.div>
-            
+
             {selectedEvent.image_url && (
-              <motion.div 
+              <motion.div
                 className="relative w-full h-48 my-4 rounded-lg overflow-hidden"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                transition={{ 
+                transition={{
                   delay: 0.3,
                   type: "spring",
                   stiffness: 300,
-                  damping: 30
+                  damping: 30,
                 }}
               >
                 <Image
@@ -108,7 +110,7 @@ export function EventDrawer({ events }: EventDrawerProps) {
                 />
               </motion.div>
             )}
-            
+
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -119,16 +121,18 @@ export function EventDrawer({ events }: EventDrawerProps) {
               </DrawerDescription>
             </motion.div>
           </DrawerHeader>
-          
-          <motion.div 
+
+          <motion.div
             className="p-4"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <p className="text-sm text-gray-500">발생일: {selectedEvent.date}</p>
+            <p className="text-sm text-gray-500">
+              발생일: {selectedEvent.date}
+            </p>
           </motion.div>
-          
+
           <DrawerFooter>
             <motion.div
               initial={{ y: 20, opacity: 0 }}
@@ -149,7 +153,7 @@ export function EventDrawer({ events }: EventDrawerProps) {
 
   return (
     <DrawerContent className="max-w-md mx-auto">
-      <motion.div 
+      <motion.div
         className="max-h-[85vh] overflow-y-auto"
         variants={containerVariants}
         initial="hidden"
@@ -165,9 +169,9 @@ export function EventDrawer({ events }: EventDrawerProps) {
             </DrawerDescription>
           </motion.div>
         </DrawerHeader>
-        
+
         <div className="p-4">
-          <motion.div 
+          <motion.div
             className="space-y-4"
             variants={containerVariants}
             initial="hidden"
@@ -179,18 +183,18 @@ export function EventDrawer({ events }: EventDrawerProps) {
                 variants={itemVariants}
                 className="p-4 rounded-lg border cursor-pointer hover:bg-accent transition-colors"
                 onClick={() => setSelectedEvent(event)}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.02,
                   y: -2,
-                  transition: { duration: 0.2 }
+                  transition: { duration: 0.2 },
                 }}
-                whileTap={{ 
+                whileTap={{
                   scale: 0.98,
-                  transition: { duration: 0.1 }
+                  transition: { duration: 0.1 },
                 }}
                 layout
               >
-                <motion.h3 
+                <motion.h3
                   className="font-medium"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -198,7 +202,7 @@ export function EventDrawer({ events }: EventDrawerProps) {
                 >
                   {event.title}
                 </motion.h3>
-                <motion.p 
+                <motion.p
                   className="text-sm text-gray-500 mt-1"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -210,7 +214,7 @@ export function EventDrawer({ events }: EventDrawerProps) {
             ))}
           </motion.div>
         </div>
-        
+
         <DrawerFooter>
           <motion.div variants={itemVariants}>
             <DrawerClose asChild>
@@ -223,4 +227,4 @@ export function EventDrawer({ events }: EventDrawerProps) {
       </motion.div>
     </DrawerContent>
   );
-} 
+}

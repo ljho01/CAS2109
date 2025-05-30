@@ -1,6 +1,6 @@
 "use client";
 
-import { MapIcon, UserIcon, BellIcon, CogIcon } from "lucide-react";
+import { MapIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useRouter, usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
