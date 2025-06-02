@@ -58,7 +58,7 @@ export function EventCardList({ events }: EventCardListProps) {
         <motion.div
           key={idx}
           variants={cardVariants}
-          className="rounded-lg border shadow p-4 flex gap-4 items-center bg-white/80 backdrop-blur-sm border-gray-200"
+          className="rounded-lg border shadow p-4 flex gap-4 items-center bg-background/80 backdrop-blur-sm"
           whileHover={{
             scale: 1.02,
             y: -4,

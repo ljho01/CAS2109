@@ -13,9 +13,9 @@ import OSM from "ol/source/OSM";
 import { fromLonLat, toLonLat } from "ol/proj";
 import { MapControls } from "./map-controls";
 import Cluster from "ol/source/Cluster";
-import { Drawer } from "@/components/ui/drawer";
-import { EventDrawer } from "./event-drawer";
+import { Drawer } from "./drawer";
 import { YearSlider } from "./year-slider";
+import { useStore } from "@/lib/use-store";
 
 interface EventData {
   title: string;
@@ -45,14 +45,12 @@ function debounce<T extends (...args: any[]) => any>(
 }
 
 export function MobileMap() {
+  const { events, setEvents, setExpanded } = useStore();
   const mapRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<Map | null>(null);
   const locationSourceRef = useRef<VectorSource | null>(null);
   const locationFeatureRef = useRef<Feature | null>(null);
-  const [selectedEvents, setSelectedEvents] = useState<EventData[]>([]);
-  const [drawerOpen, setDrawerOpen] = useState(false);
   const clusterSourceRef = useRef<Cluster | null>(null);
-  const [events, setEvents] = useState<EventData[]>([]);
   const [loading, setLoading] = useState(false);
 
   // 모든 이벤트의 연도 범위 계산 (초기값 설정)
@@ -97,7 +95,7 @@ export function MobileMap() {
         setLoading(false);
       }
     },
-    []
+    [setEvents]
   );
 
   // 지도 extent 계산 함수
@@ -231,7 +229,7 @@ export function MobileMap() {
         }
       },
       (error) => {
-        console.error("위치를 가져올 수 없습니다:", error);
+        console.log("위치를 가져올 수 없습니다:", error);
       }
     );
   }, [map, createLocationStyle]);
@@ -281,12 +279,12 @@ export function MobileMap() {
       ) as EventFeature;
       if (feature) {
         const features = feature.get("features") as Feature[];
-        setSelectedEvents(features.map((f) => f.getProperties() as EventData));
-        setDrawerOpen(true);
+        setEvents(features.map((f) => f.getProperties() as EventData));
+        setExpanded(true);
       } else {
         // 빈 공간을 클릭했을 때 drawer 닫기
-        setSelectedEvents([]);
-        setDrawerOpen(false);
+        setEvents([]);
+        setExpanded(false);
       }
     });
 
@@ -357,10 +355,10 @@ export function MobileMap() {
     <div className="relative">
       <div ref={mapRef} className="w-full h-screen" />
       {loading && (
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background/90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
           <div className="flex items-center space-x-2">
             <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
-            <span className="text-sm text-gray-700">이벤트 로딩 중...</span>
+            <span className="text-sm text-foreground">이벤트 로딩 중...</span>
           </div>
         </div>
       )}
@@ -372,11 +370,7 @@ export function MobileMap() {
         value={yearRange}
         onValueChange={handleYearChange}
       />
-      <EventDrawer
-        events={selectedEvents}
-        onOpenChange={setDrawerOpen}
-        open={drawerOpen}
-      />
+      <Drawer />
     </div>
   );
 }
