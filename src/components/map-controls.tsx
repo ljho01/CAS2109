@@ -1,60 +1,60 @@
-"use client"
+"use client";
 
-import { Minus, Plus, Crosshair, Sun, Moon } from "lucide-react"
-import { Map as OLMap } from "ol"
-import { fromLonLat } from "ol/proj"
-import { Button } from "./ui/button"
-import { cn } from "@/lib/utils"
-import { useTheme } from "next-themes"
-import { motion, AnimatePresence } from "framer-motion"
+import { Minus, Plus, Crosshair, Sun, Moon } from "lucide-react";
+import { Map as OLMap } from "ol";
+import { fromLonLat } from "ol/proj";
+import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface MapControlsProps {
-  map: OLMap | null
-  className?: string
+  map: OLMap | null;
+  className?: string;
 }
 
 export function MapControls({ map, className }: MapControlsProps) {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
 
   const handleZoomIn = () => {
-    if (!map) return
-    const view = map.getView()
-    const zoom = view.getZoom() || 0
+    if (!map) return;
+    const view = map.getView();
+    const zoom = view.getZoom() || 0;
     view.animate({
       zoom: zoom + 1,
-      duration: 250
-    })
-  }
+      duration: 250,
+    });
+  };
 
   const handleZoomOut = () => {
-    if (!map) return
-    const view = map.getView()
-    const zoom = view.getZoom() || 0
+    if (!map) return;
+    const view = map.getView();
+    const zoom = view.getZoom() || 0;
     view.animate({
       zoom: zoom - 1,
-      duration: 250
-    })
-  }
+      duration: 250,
+    });
+  };
 
   const handleMyLocation = () => {
-    if (!map || !navigator.geolocation) return
+    if (!map || !navigator.geolocation) return;
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        const { latitude, longitude } = position.coords
-        const location = fromLonLat([longitude, latitude])
-        
+        const { latitude, longitude } = position.coords;
+        const location = fromLonLat([longitude, latitude]);
+
         map.getView().animate({
           center: location,
           zoom: 15,
-          duration: 500
-        })
+          duration: 500,
+        });
       },
       (error) => {
-        console.error('위치를 가져올 수 없습니다:', error)
+        console.log("위치를 가져올 수 없습니다:", error);
       }
-    )
-  }
+    );
+  };
 
   const containerVariants = {
     hidden: { opacity: 0, x: 50 },
@@ -66,9 +66,9 @@ export function MapControls({ map, className }: MapControlsProps) {
         stiffness: 300,
         damping: 30,
         staggerChildren: 0.1,
-        delayChildren: 0.5
-      }
-    }
+        delayChildren: 0.5,
+      },
+    },
   };
 
   const buttonVariants = {
@@ -79,19 +79,19 @@ export function MapControls({ map, className }: MapControlsProps) {
       transition: {
         type: "spring",
         stiffness: 400,
-        damping: 25
-      }
-    }
+        damping: 25,
+      },
+    },
   };
 
   return (
-    <motion.div 
+    <motion.div
       className={cn("flex flex-col gap-2", className)}
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      <motion.div 
+      <motion.div
         className="flex flex-col gap-2 p-2 bg-background/90 backdrop-blur-md rounded-lg shadow-lg border border-border/20"
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.2 }}
@@ -113,7 +113,7 @@ export function MapControls({ map, className }: MapControlsProps) {
             </motion.button>
           </Button>
         </motion.div>
-        
+
         <motion.div variants={buttonVariants}>
           <Button
             variant="outline"
@@ -131,7 +131,7 @@ export function MapControls({ map, className }: MapControlsProps) {
             </motion.button>
           </Button>
         </motion.div>
-        
+
         <motion.div variants={buttonVariants}>
           <Button
             variant="outline"
@@ -149,12 +149,12 @@ export function MapControls({ map, className }: MapControlsProps) {
             </motion.button>
           </Button>
         </motion.div>
-        
+
         <motion.div variants={buttonVariants}>
           <Button
             variant="outline"
             size="icon"
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="transition-all duration-200"
             asChild
           >
@@ -164,7 +164,7 @@ export function MapControls({ map, className }: MapControlsProps) {
               transition={{ duration: 0.2 }}
             >
               <AnimatePresence mode="wait">
-                {theme === 'dark' ? (
+                {theme === "dark" ? (
                   <motion.div
                     key="sun"
                     initial={{ rotate: -90, opacity: 0 }}
@@ -191,5 +191,5 @@ export function MapControls({ map, className }: MapControlsProps) {
         </motion.div>
       </motion.div>
     </motion.div>
-  )
-} 
+  );
+}

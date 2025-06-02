@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { Slider } from "@/components/ui/slider"
-import { Button } from "@/components/ui/button"
-import { Calendar, ChevronUp } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { Slider } from "@/components/ui/slider";
+import { Button } from "@/components/ui/button";
+import { Calendar } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface YearSliderProps {
   className?: string;
@@ -15,24 +15,30 @@ interface YearSliderProps {
   onValueChange: (value: [number, number]) => void;
 }
 
-export function YearSlider({ className, minYear, maxYear, value, onValueChange }: YearSliderProps) {
+export function YearSlider({
+  className,
+  minYear,
+  maxYear,
+  value,
+  onValueChange,
+}: YearSliderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.div 
+    <motion.div
       className={cn("flex flex-col items-end gap-2", className)}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ 
+      transition={{
         delay: 0.7,
         type: "spring",
         stiffness: 300,
-        damping: 30
+        damping: 30,
       }}
     >
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             className="flex flex-col items-center gap-2 p-4 bg-background/90 backdrop-blur-md rounded-lg shadow-lg mb-2 border border-border/20"
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -40,10 +46,10 @@ export function YearSlider({ className, minYear, maxYear, value, onValueChange }
             transition={{
               type: "spring",
               stiffness: 300,
-              damping: 30
+              damping: 30,
             }}
           >
-            <motion.span 
+            <motion.span
               className="text-sm font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -51,7 +57,7 @@ export function YearSlider({ className, minYear, maxYear, value, onValueChange }
             >
               {value[1]}
             </motion.span>
-            <motion.div 
+            <motion.div
               className="h-[200px] flex items-center"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -68,7 +74,7 @@ export function YearSlider({ className, minYear, maxYear, value, onValueChange }
                 className="h-full"
               />
             </motion.div>
-            <motion.span 
+            <motion.span
               className="text-sm font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -79,34 +85,22 @@ export function YearSlider({ className, minYear, maxYear, value, onValueChange }
           </motion.div>
         )}
       </AnimatePresence>
-      
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
+
+      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
         <Button
           variant="outline"
           size="icon"
           onClick={() => setIsOpen(!isOpen)}
           className="bg-background/90 backdrop-blur-md border-border/20 transition-all duration-200"
-          asChild
         >
-          <motion.button
+          <motion.div
             whileHover={{ rotate: [0, -10, 10, 0] }}
             transition={{ duration: 0.4 }}
           >
             <Calendar className="h-4 w-4" />
-            <motion.div
-              animate={{ 
-                rotate: isOpen ? 0 : 180 
-              }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-            >
-              <ChevronUp className="h-3 w-3" />
-            </motion.div>
-          </motion.button>
+          </motion.div>
         </Button>
       </motion.div>
     </motion.div>
-  )
-} 
+  );
+}
