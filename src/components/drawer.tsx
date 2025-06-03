@@ -264,7 +264,7 @@ const EventHeader = () => {
 
       <motion.button
         className="p-2 ml-2 rounded-full hover:bg-muted transition-colors"
-        onClick={() => toggleEventSaved(selectedEvent.id)}
+        onPointerDown={() => toggleEventSaved(selectedEvent.id)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         initial={{ opacity: 0, scale: 0.5 }}
