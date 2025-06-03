@@ -296,7 +296,7 @@ const EventDetail = ({ selectedEvent }: { selectedEvent: EventData }) => {
 
   return (
     <motion.div
-      className="flex flex-col gap-4 max-h-[70vh] overflow-y-auto p-1"
+      className="flex flex-col gap-4 max-h-[70vh] overflow-y-auto p-1 pb-16"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
@@ -335,15 +335,15 @@ const EventDetail = ({ selectedEvent }: { selectedEvent: EventData }) => {
 
       {/* 날짜와 구역 정보 */}
       <motion.div
-        className="flex gap-4 text-sm text-muted-foreground"
+        className="flex gap-2 text-sm text-muted-foreground"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.25 }}
       >
-        <span>
+        <span className="text-xs bg-blue-500 dark:bg-blue-200 text-white dark:text-black rounded-full px-3 py-1.5">
           {t("date")}: {selectedEvent.date}
         </span>
-        <span>
+        <span className="text-xs bg-blue-500 dark:bg-blue-200 text-white dark:text-black rounded-full px-3 py-1.5">
           {t("district")}: {selectedEvent.district}
         </span>
       </motion.div>
