@@ -252,7 +252,7 @@ const EventHeader = () => {
         <Button
           variant="ghost"
           size="icon"
-          onClick={() => setSelectedEvent(null)}
+          onPointerDown={() => setSelectedEvent(null)}
           className="rounded-full"
         >
           <ChevronLeft className="h-5 w-5" />
