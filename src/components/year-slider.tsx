@@ -91,7 +91,7 @@ export function YearSlider({
           variant="outline"
           size="icon"
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-background/90 backdrop-blur-md border-border/20 transition-all duration-200"
+          className="h-10 w-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 rounded-full"
         >
           <motion.div
             whileHover={{ rotate: [0, -10, 10, 0] }}

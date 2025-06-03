@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 interface MapControlsProps {
   map: OLMap | null;
@@ -15,6 +16,7 @@ interface MapControlsProps {
 
 export function MapControls({ map, className }: MapControlsProps) {
   const { theme, setTheme } = useTheme();
+  const t = useTranslations("map");
 
   const handleZoomIn = () => {
     if (!map) return;
@@ -51,7 +53,7 @@ export function MapControls({ map, className }: MapControlsProps) {
         });
       },
       (error) => {
-        console.log("위치를 가져올 수 없습니다:", error);
+        console.log(t("locationError"), error);
       }
     );
   };

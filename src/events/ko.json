@@ -1,0 +1,80 @@
+[
+  {
+    "id": "seodaemun-prison-history-hall",
+    "title": "서대문형무소 역사관",
+    "description": "1908년 일제의 통감부가 대한제국을 압박하여 한성 서대문 밖 인왕산 자락에 '경성감옥'이라는 이름으로 건립한 근대식 감옥입니다. 일제강점기 동안에는 수많은 독립운동가들이 이곳에 투옥되어 혹독한 고문과 탄압 속에 처형되거나 순국했으며, 1919년 3·1운동 이후에는 유관순 열사를 비롯한 많은 애국지사들이 수감되어 고초를 겪었습니다.",
+    "location": [37.57417, 126.95583],
+    "date": "1945-08-15",
+    "district": "서대문구",
+    "image_url": "https://mediahub.seoul.go.kr/uploads/mediahub/2024/02/OUaPtGOzDfRkhssDsIbNxSpRfJgzxWFU.jpg",
+    "ref_url": [
+      "https://mediahub.seoul.go.kr/archives/2010425",
+      "http://www.ktv.go.kr/content/view?content_id=501300"
+    ]
+  },
+  {
+    "id": "independence-gate",
+    "title": "독립문",
+    "description": "1896년 독립협회가 자주독립의 의지를 다지고자 건립을 추진하여 1897년 11월 20일 완공된 기념비적인 석조 아치문입니다. 조선이 청나라의 책봉 관계를 상징적으로 보여주던 영은문을 헐고 그 자리에 세워졌으며, 이는 중국 중심의 세계관에서 벗어나 완전한 주권을 가진 독립국임을 선언하는 의미를 담고 있습니다.",
+    "location": [37.5725, 126.95972],
+    "date": "1897-11-20",
+    "district": "서대문구",
+    "image_url": "https://love.seoul.go.kr/tmda/Pds/Board/seoul_news_write/article_201908_09_1200_1.jpg",
+    "ref_url": [
+      "https://love.seoul.go.kr/articles/6815",
+      "https://encykorea.aks.ac.kr/Article/E0015980"
+    ]
+  },
+  {
+    "id": "seodaemun-independence-park",
+    "title": "서대문독립공원",
+    "description": "1992년 8월 15일, 제47주년 광복절을 기념하여 개원한 역사적인 공원입니다. 이곳은 본래 일제강점기에 수많은 독립운동가들이 수감되어 고초를 겪었던 서대문형무소가 자리했던 부지입니다. 과거의 아픈 역사를 기억하고 독립운동가들의 숭고한 희생과 투쟁 정신을 기리기 위해 조성된 공원입니다.",
+    "location": [37.5715, 126.957],
+    "date": "1992-08-15",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%EC%84%9C%EB%8C%80%EB%AC%B8%EB%8F%85%EB%A6%BD%EA%B3%B5%EC%9B%90%EC%9D%98_%EB%AA%A8%EC%8A%B5.jpg",
+    "ref_url": [
+      "https://ko.wikipedia.org/wiki/%EC%84%9C%EB%8C%80%EB%AC%B8%EB%8F%85%EB%A6%BD%EA%B3%B5%EC%9B%90",
+      "https://www.sdm.go.kr/culture/attraction/sub2030.do"
+    ]
+  },
+  {
+    "id": "bongwon-temple",
+    "title": "봉원사",
+    "description": "신라 진성여왕 3년(889년) 도선국사가 창건한 것으로 전해지는 천년 고찰로, 창건 당시에는 반야사라 불렸습니다. 조선 영조 24년(1748) 현재의 안산 기슭으로 이전하면서 영조 임금으로부터 '봉원사'라는 사액을 직접 하사받고 친필 현판을 받았습니다.",
+    "location": [37.57222, 126.94694],
+    "date": "1884-12-04",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Korea-Seoul-Bongwon_Temple-01.jpg",
+    "ref_url": [
+      "https://encykorea.aks.ac.kr/Article/E0023976",
+      "https://www.sdm.go.kr/culture/attraction/sub2100.do"
+    ]
+  },
+  {
+    "id": "yonsei-university-sinchon",
+    "title": "연세대학교 신촌캠퍼스",
+    "description": "한국 근대 고등교육의 효시 중 하나로, 1915년 미국 북장로교 선교사 호러스 그랜트 언더우드가 설립한 연희전문학교와 캐나다 선교사 올리버 R. 에이비슨이 설립한 세브란스의학전문학교에서 시작됩니다. 1987년 6월 민주항쟁 당시 이한열 열사가 경찰이 쏜 최루탄에 피격되어 사망하는 비극적인 사건이 발생한 곳이기도 합니다.",
+    "location": [37.56578, 126.9386],
+    "date": "1987-06-09",
+    "district": "서대문구",
+    "image_url": "https://i.namu.wiki/i/DtMlflCZZHx5LVTIAfWMstz0PpmgaBPGCumFXyGMSYVnktzUvt1eU2Z2fq8HyoPZ9-OFcOoGHUqGJtccpSEJmg.webp",
+    "ref_url": [
+      "https://www.tripadvisor.co.kr/Attraction_Review-g294197-d13138039-Reviews-Yonsei_University_Sinchon_Campus-Seoul.html",
+      "https://www.yonsei.ac.kr/"
+    ]
+  },
+  {
+    "id": "ewha-womans-university",
+    "title": "이화여자대학교",
+    "description": "1886년 미국 감리교 여성 선교사인 메리 스크랜튼 여사가 서울 정동의 자택에서 한 명의 학생으로 시작한 '이화학당'이 그 모태입니다. '이화'라는 교명은 당시 고종 황제가 하사한 것으로 '배꽃같이 순결하고 아름다우며 향기로운 열매를 맺으라'는 뜻을 담고 있습니다.",
+    "location": [37.5571, 126.9414],
+    "date": "1886-05-31",
+    "district": "서대문구",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90_%EC%82%AC%EC%A7%84.jpg/960px-%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90_%EC%82%AC%EC%A7%84.jpg?20230926025348",
+    "ref_url": [
+      "https://ko.wikipedia.org/wiki/%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90",
+      "https://terms.naver.com/entry.naver?docId=536639&cid=71165&categoryId=71165"
+    ]
+  }
+]

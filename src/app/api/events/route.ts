@@ -1,19 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
-import events from "@/events.json";
-
-interface EventData {
-  title: string;
-  description: string;
-  location: number[]; // [lat, lng] - changed from tuple to array
-  date: string;
-  district: string;
-  image_url: string;
-  ref_url: string[];
-}
+import { EventData } from "@/types/events";
 
 export async function POST(request: NextRequest) {
   try {
-    const { extent, yearRange } = await request.json();
+    const { extent, yearRange, locale = "ko" } = await request.json();
+
+    // locale에 따라 적절한 이벤트 데이터 로드
+    let events: EventData[];
+    try {
+      if (locale === "en") {
+        events = (await import("@/events/en.json")).default;
+      } else {
+        events = (await import("@/events/ko.json")).default;
+      }
+    } catch (error) {
+      console.error(`Failed to load events for locale ${locale}:`, error);
+      // fallback to Korean events
+      events = (await import("@/events/ko.json")).default;
+    }
 
     // extent 형식: [minLon, minLat, maxLon, maxLat]
     const [minLon, minLat, maxLon, maxLat] = extent;

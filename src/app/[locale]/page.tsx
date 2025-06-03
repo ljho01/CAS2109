@@ -1,0 +1,52 @@
+"use client";
+
+import { MobileMap } from "@/components/mobile-map";
+import { SplashScreen } from "@/components/splash-screen";
+import { BottomTabs } from "@/components/bottom-tabs";
+import { motion } from "framer-motion";
+import { useState } from "react";
+
+export default function Home() {
+  const [showSplash, setShowSplash] = useState(true);
+
+  return (
+    <>
+      {showSplash && (
+        <SplashScreen
+          onComplete={() => setShowSplash(false)}
+          duration={500} // 최소 1초 지속
+        />
+      )}
+      {!showSplash && (
+        <motion.div
+          className="min-h-screen flex justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.main
+            className="w-full max-w-md flex flex-col bg-background shadow-xl relative overflow-hidden"
+            initial={{ scale: 0.95, y: 20 }}
+            animate={{ scale: 1, y: 0 }}
+            transition={{
+              delay: 0.1,
+              type: "spring",
+              stiffness: 300,
+              damping: 30,
+            }}
+          >
+            <motion.div
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              <MobileMap />
+            </motion.div>
+            <BottomTabs />
+          </motion.main>
+        </motion.div>
+      )}
+    </>
+  );
+}

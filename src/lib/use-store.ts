@@ -1,14 +1,5 @@
 import { create } from "zustand";
-
-interface EventData {
-  title: string;
-  description: string;
-  location: [number, number];
-  date: string;
-  district: string;
-  image_url: string;
-  ref_url: string[];
-}
+import { EventData } from "@/types/events";
 
 interface Store {
   events: EventData[];

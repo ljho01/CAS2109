@@ -1,0 +1,64 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "location": "Location",
+    "settings": "Settings",
+    "language": "Language"
+  },
+  "map": {
+    "eventsLoading": "Loading events...",
+    "locationError": "Unable to get location",
+    "clickToClose": "Click empty space to close"
+  },
+  "controls": {
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out",
+    "location": "My Location",
+    "settings": "Settings"
+  },
+  "drawer": {
+    "events": "Events",
+    "title": "Where would you like to visit?",
+    "subtitle": "Found {count} places",
+    "noEvents": "No events selected",
+    "date": "Date",
+    "district": "District",
+    "description": "Description",
+    "references": "References"
+  },
+  "yearSlider": {
+    "title": "Year Range",
+    "from": "From",
+    "to": "To"
+  },
+  "language": {
+    "korean": "한국어",
+    "english": "English"
+  },
+  "tabs": {
+    "home": "Home",
+    "myEvents": "Saved"
+  },
+  "myEvents": {
+    "title": "Saved Events",
+    "subtitle": "{count} saved places",
+    "loading": "Loading...",
+    "fetchError": "Failed to load saved events",
+    "empty": {
+      "title": "No saved events",
+      "description": "Save interesting historical events by tapping the star icon!"
+    }
+  },
+  "audio": {
+    "play": "Play",
+    "pause": "Pause",
+    "loading": "Loading...",
+    "error": "Unable to load audio",
+    "playError": "Error occurred during playback",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "volume": "Volume",
+    "currentTime": "Current time",
+    "duration": "Duration"
+  }
+}

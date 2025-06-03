@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
+import { useTranslations, useLocale } from "next-intl";
 import Map from "ol/Map";
 import View from "ol/View";
 import TileLayer from "ol/layer/Tile";
@@ -15,17 +16,9 @@ import { MapControls } from "./map-controls";
 import Cluster from "ol/source/Cluster";
 import { Drawer } from "./drawer";
 import { YearSlider } from "./year-slider";
+import { LanguageToggle } from "./language-toggle";
 import { useStore } from "@/lib/use-store";
-
-interface EventData {
-  title: string;
-  description: string;
-  location: [number, number];
-  date: string;
-  district: string;
-  image_url: string;
-  ref_url: string[];
-}
+import { EventData } from "@/types/events";
 
 interface EventFeature extends Feature {
   get(key: string): EventData | Feature[] | undefined;
@@ -45,6 +38,8 @@ function debounce<T extends (...args: any[]) => any>(
 }
 
 export function MobileMap() {
+  const t = useTranslations("map");
+  const locale = useLocale();
   const { events, setEvents, setExpanded } = useStore();
   const mapRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<Map | null>(null);
@@ -74,6 +69,7 @@ export function MobileMap() {
           body: JSON.stringify({
             extent,
             yearRange,
+            locale,
           }),
         });
 
@@ -95,7 +91,7 @@ export function MobileMap() {
         setLoading(false);
       }
     },
-    [setEvents]
+    [setEvents, locale]
   );
 
   // 지도 extent 계산 함수
@@ -116,7 +112,7 @@ export function MobileMap() {
   const debouncedFetchEvents = useCallback(
     debounce((extent: number[], yearRange: [number, number]) => {
       fetchEvents(extent, yearRange);
-    }, 300), // 300ms debounce
+    }, 300),
     [fetchEvents]
   );
 
@@ -229,10 +225,10 @@ export function MobileMap() {
         }
       },
       (error) => {
-        console.log("위치를 가져올 수 없습니다:", error);
+        console.log(t("locationError"), error);
       }
     );
-  }, [map, createLocationStyle]);
+  }, [map, createLocationStyle, t]);
 
   // 지도 초기화
   useEffect(() => {
@@ -294,7 +290,7 @@ export function MobileMap() {
       mapInstance.setTarget(undefined);
       setMap(null);
     };
-  }, [createEventStyle]); // 의존성을 최소화
+  }, [createEventStyle, setEvents, setExpanded]);
 
   // 지도가 생성된 후 이벤트 리스너 등록
   useEffect(() => {
@@ -358,18 +354,22 @@ export function MobileMap() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background/90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
           <div className="flex items-center space-x-2">
             <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
-            <span className="text-sm text-foreground">이벤트 로딩 중...</span>
+            <span className="text-sm text-foreground">
+              {t("eventsLoading")}
+            </span>
           </div>
         </div>
       )}
       <MapControls map={map} className="absolute top-4 right-4" />
-      <YearSlider
-        className="absolute bottom-20 right-4"
-        minYear={minYear}
-        maxYear={maxYear}
-        value={yearRange}
-        onValueChange={handleYearChange}
-      />
+      <div className="absolute bottom-40 right-4 flex flex-col gap-2 items-end">
+        <LanguageToggle />
+        <YearSlider
+          minYear={minYear}
+          maxYear={maxYear}
+          value={yearRange}
+          onValueChange={handleYearChange}
+        />
+      </div>
       <Drawer />
     </div>
   );

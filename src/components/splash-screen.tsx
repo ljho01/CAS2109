@@ -1,33 +1,36 @@
-"use client"
+"use client";
 
-import { motion, AnimatePresence } from "framer-motion"
-import { MapIcon } from "lucide-react"
-import { useEffect, useState } from "react"
+import { motion, AnimatePresence } from "framer-motion";
+import { MapIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface SplashScreenProps {
-  onComplete?: () => void
-  duration?: number
+  onComplete?: () => void;
+  duration?: number;
 }
 
-export function SplashScreen({ onComplete, duration = 3000 }: SplashScreenProps) {
-  const [isVisible, setIsVisible] = useState(true)
+export function SplashScreen({
+  onComplete,
+  duration = 3000,
+}: SplashScreenProps) {
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(false)
+      setIsVisible(false);
       setTimeout(() => {
-        onComplete?.()
-      }, 500)
-    }, duration)
+        onComplete?.();
+      }, 500);
+    }, duration);
 
-    return () => clearTimeout(timer)
-  }, [duration, onComplete])
+    return () => clearTimeout(timer);
+  }, [duration, onComplete]);
 
   return (
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600"
+          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -37,22 +40,22 @@ export function SplashScreen({ onComplete, duration = 3000 }: SplashScreenProps)
             {[...Array(20)].map((_, i) => (
               <motion.div
                 key={i}
-                className="absolute w-2 h-2 bg-white/20 rounded-full"
+                className="absolute w-2 h-2 bg-foreground/20 rounded-full"
                 initial={{
-                  x: Math.random() * window.innerWidth,
-                  y: Math.random() * window.innerHeight,
-                  scale: 0
+                  x: Math.random() * (window?.innerWidth || 1000),
+                  y: Math.random() * (window?.innerHeight || 1000),
+                  scale: 0,
                 }}
                 animate={{
                   y: -100,
                   scale: [0, 1, 0],
-                  opacity: [0, 1, 0]
+                  opacity: [0, 1, 0],
                 }}
                 transition={{
                   duration: Math.random() * 2 + 3,
                   repeat: Infinity,
                   delay: Math.random() * 2,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
                 }}
               />
             ))}
@@ -63,49 +66,29 @@ export function SplashScreen({ onComplete, duration = 3000 }: SplashScreenProps)
             className="relative z-10 flex flex-col items-center"
             initial={{ scale: 0.5, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ 
-              duration: 0.8, 
+            transition={{
+              duration: 0.8,
               delay: 0.2,
               type: "spring",
               stiffness: 300,
-              damping: 30
+              damping: 30,
             }}
           >
             {/* Logo */}
             <motion.div
-              className="mb-8 p-6 bg-white/20 backdrop-blur-md rounded-3xl border border-white/30"
-              animate={{ 
+              className="mb-8 p-6 bg-foreground rounded-3xl"
+              animate={{
                 rotate: [0, 5, -5, 0],
-                scale: [1, 1.05, 1]
+                scale: [1, 1.05, 1],
               }}
-              transition={{ 
+              transition={{
                 duration: 2,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
             >
               <MapIcon className="w-16 h-16 text-white" />
             </motion.div>
-
-            {/* App title */}
-            <motion.h1
-              className="text-4xl font-bold text-white mb-4 text-center"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-            >
-              이벤트 맵
-            </motion.h1>
-
-            {/* Subtitle */}
-            <motion.p
-              className="text-lg text-white/80 text-center max-w-xs"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.7, duration: 0.6 }}
-            >
-              지도에서 이벤트를 탐색하세요
-            </motion.p>
 
             {/* Loading indicator */}
             <motion.div
@@ -117,16 +100,16 @@ export function SplashScreen({ onComplete, duration = 3000 }: SplashScreenProps)
               {[0, 1, 2].map((index) => (
                 <motion.div
                   key={index}
-                  className="w-3 h-3 bg-white rounded-full"
+                  className="w-3 h-3 bg-foreground rounded-full"
                   animate={{
                     scale: [1, 1.5, 1],
-                    opacity: [0.5, 1, 0.5]
+                    opacity: [0.5, 1, 0.5],
                   }}
                   transition={{
                     duration: 1.5,
                     repeat: Infinity,
                     delay: index * 0.2,
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                   }}
                 />
               ))}
@@ -143,7 +126,7 @@ export function SplashScreen({ onComplete, duration = 3000 }: SplashScreenProps)
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }
 
 export function MiniSplash({ children }: { children: React.ReactNode }) {
@@ -156,5 +139,5 @@ export function MiniSplash({ children }: { children: React.ReactNode }) {
     >
       {children}
     </motion.div>
-  )
-} 
+  );
+}

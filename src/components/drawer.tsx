@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import { useTranslations, useLocale } from "next-intl";
 import {
   DndContext,
   DragEndEvent,
@@ -15,9 +16,13 @@ import { DropRegions } from "./drop-regions";
 import { Sheet } from "./sheet";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
-import { ChevronLeft, ExternalLink } from "lucide-react";
+import { ChevronLeft, Star, StarOff } from "lucide-react";
 import Image from "next/image";
-import { useStore } from "@/lib/use-store";
+import { EventData, useStore } from "@/lib/use-store";
+import { AudioPlayer } from "./audio-player";
+import { usePodcast } from "@/hooks/use-podcast";
+import { useSavedEvents } from "@/hooks/use-saved-events";
+import { EventReferences } from "./event-references";
 
 // Custom modifier for rubberband effect
 const rubberbandModifier = (args: any) => {
@@ -106,9 +111,11 @@ export function Drawer() {
 }
 
 const DrawerContent = () => {
+  const t = useTranslations("drawer");
   const events = useStore((state) => state.events);
   const selectedEvent = useStore((state) => state.selectedEvent);
   const setSelectedEvent = useStore((state) => state.setSelectedEvent);
+  const { isEventSaved, toggleEventSaved } = useSavedEvents();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -134,7 +141,11 @@ const DrawerContent = () => {
     },
   };
 
-  return !selectedEvent ? (
+  if (selectedEvent) {
+    return <EventDetail selectedEvent={selectedEvent} />;
+  }
+
+  return (
     <div className="max-w-md mx-auto relative">
       <motion.div
         className="max-h-[85vh] flex flex-col"
@@ -146,7 +157,12 @@ const DrawerContent = () => {
           variants={itemVariants}
           className="w-full text-2xl font-semibold h-10 bg-background shrink-0 grow-0 px-1.5 mb-8"
         >
-          총 {events.length}개의 장소가 있어요.
+          <div className="flex flex-col">
+            <span className="text-2xl">{t("title")}</span>
+            <span className="text-sm text-muted-foreground font-normal">
+              {t("subtitle", { count: events.length })}
+            </span>
+          </div>
         </motion.div>
         <motion.div
           className="flex flex-col gap-4 flex-1"
@@ -158,7 +174,7 @@ const DrawerContent = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="p-2 rounded-xl cursor-pointer hover:bg-accent transition-colors flex gap-5"
+              className="p-2 rounded-xl cursor-pointer hover:bg-accent transition-colors flex gap-5 relative"
               onClick={() => setSelectedEvent(event)}
               whileTap={{
                 scale: 0.98,
@@ -175,9 +191,9 @@ const DrawerContent = () => {
                   className="w-full h-full rounded-lg"
                 />
               </div>
-              <div className="flex flex-col gap-0.5 justify-center">
+              <div className="flex flex-col gap-0.5 justify-center flex-1">
                 <motion.h3
-                  className="font-semibold"
+                  className="font-semibold w-[90%] truncate"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: index * 0.1 + 0.3 }}
@@ -193,90 +209,26 @@ const DrawerContent = () => {
                   {event.date} • {event.district}
                 </motion.p>
               </div>
+              <motion.button
+                className="absolute top-1/2 -translate-y-1/2 right-2 p-1.5 bg-background/80 backdrop-blur-sm rounded-full"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleEventSaved(event.id);
+                }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: index * 0.1 + 0.5 }}
+              >
+                {isEventSaved(event.id) ? (
+                  <Star className="h-4 w-4 text-yellow-500 fill-current" />
+                ) : (
+                  <StarOff className="h-4 w-4 text-muted-foreground" />
+                )}
+              </motion.button>
             </motion.div>
           ))}
-        </motion.div>
-      </motion.div>
-    </div>
-  ) : (
-    <div className="max-w-md mx-auto">
-      <motion.div
-        className="max-h-[95vh]"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 20 }}
-        transition={{ duration: 0.3 }}
-      >
-        <div>
-          {selectedEvent.image_url && (
-            <motion.div
-              className="relative w-full h-48 my-4 rounded-lg overflow-hidden"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{
-                delay: 0.3,
-                type: "spring",
-                stiffness: 300,
-                damping: 30,
-              }}
-            >
-              <Image
-                src={selectedEvent.image_url}
-                alt={selectedEvent.title}
-                fill
-                className="object-cover"
-              />
-            </motion.div>
-          )}
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-          >
-            <div className="text-base px-1 mb-3">
-              {selectedEvent.description}
-            </div>
-          </motion.div>
-        </div>
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="px-1"
-        >
-          <p className="text-sm text-gray-500 mb-2">
-            발생일: {selectedEvent.date}
-          </p>
-          <p className="text-sm text-gray-500">
-            지역: {selectedEvent.district}
-          </p>
-
-          {selectedEvent.ref_url && selectedEvent.ref_url.length > 0 && (
-            <div className="mt-4">
-              <h4 className="text-sm font-medium text-gray-700 mb-2">
-                참고자료
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {selectedEvent.ref_url.map((url, index) => (
-                  <motion.a
-                    key={index}
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 px-2 py-1 text-xs bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200 transition-colors"
-                    initial={{ scale: 0, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    transition={{ delay: 0.6 + index * 0.1 }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <ExternalLink className="h-3 w-3" />
-                    참고 {index + 1}
-                  </motion.a>
-                ))}
-              </div>
-            </div>
-          )}
         </motion.div>
       </motion.div>
     </div>
@@ -285,6 +237,7 @@ const DrawerContent = () => {
 
 const EventHeader = () => {
   const { selectedEvent, setSelectedEvent } = useStore();
+  const { isEventSaved, toggleEventSaved } = useSavedEvents();
 
   if (!selectedEvent) return null;
 
@@ -294,24 +247,109 @@ const EventHeader = () => {
         initial={{ x: -20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.1 }}
+        className="flex items-center gap-2 mr-auto"
       >
         <Button
           variant="ghost"
-          size="sm"
-          className="z-999"
-          onMouseDown={(e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            setSelectedEvent(null);
-          }}
+          size="icon"
+          onClick={() => setSelectedEvent(null)}
+          className="rounded-full"
         >
-          <ChevronLeft className="h-4 w-4" />
-          목록으로
+          <ChevronLeft className="h-5 w-5" />
         </Button>
+        <span className="font-semibold text-lg line-clamp-1 break-all">
+          {selectedEvent.title}
+        </span>
       </motion.div>
-      <h1 className="text-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        {selectedEvent.title}
-      </h1>
+
+      <motion.button
+        className="p-2 ml-2 rounded-full hover:bg-muted transition-colors"
+        onClick={() => toggleEventSaved(selectedEvent.id)}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.2 }}
+      >
+        {isEventSaved(selectedEvent.id) ? (
+          <Star className="h-5 w-5 text-yellow-500 fill-current" />
+        ) : (
+          <StarOff className="h-5 w-5 text-muted-foreground" />
+        )}
+      </motion.button>
     </div>
+  );
+};
+
+const EventDetail = ({ selectedEvent }: { selectedEvent: EventData }) => {
+  const t = useTranslations("drawer");
+  const locale = useLocale();
+  const { isAvailable: podcastAvailable } = usePodcast(
+    selectedEvent.id,
+    locale
+  );
+
+  if (!selectedEvent) {
+    console.warn("EventDetail rendered without a selectedEvent");
+    return <div className="p-4 text-center">{t("eventNotSelected")}</div>;
+  }
+
+  return (
+    <motion.div
+      className="flex flex-col gap-4 max-h-[70vh] overflow-y-auto p-1"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+    >
+      {/* 이벤트 이미지 */}
+      <div className="w-full aspect-[16/10] rounded-lg overflow-hidden">
+        <Image
+          src={selectedEvent.image_url}
+          alt={selectedEvent.title}
+          width={400}
+          height={250}
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* 팟캐스트 플레이어 (팟캐스트가 있는 경우에만 표시) */}
+      {podcastAvailable && (
+        <AudioPlayer
+          eventId={selectedEvent.id}
+          locale={locale}
+          className="w-full"
+        />
+      )}
+
+      {/* 이벤트 설명 */}
+      <motion.div
+        className="space-y-3"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2 }}
+      >
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          {selectedEvent.description}
+        </p>
+      </motion.div>
+
+      {/* 날짜와 구역 정보 */}
+      <motion.div
+        className="flex gap-4 text-sm text-muted-foreground"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.25 }}
+      >
+        <span>
+          {t("date")}: {selectedEvent.date}
+        </span>
+        <span>
+          {t("district")}: {selectedEvent.district}
+        </span>
+      </motion.div>
+
+      {/* 참고 링크들 */}
+      <EventReferences references={selectedEvent.ref_url} />
+    </motion.div>
   );
 };

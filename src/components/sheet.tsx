@@ -33,7 +33,7 @@ export function Sheet({ children, expanded, header }: Props) {
           maxHeight: "var(--max-height)",
           transform: expanded
             ? `translate3d(0, var(--transform, 0px), 0)`
-            : `translate3d(0, calc(100% - 100px + var(--transform, 0px)), 0)`,
+            : `translate3d(0, calc(100% - 120px + var(--transform, 0px)), 0)`,
         } as React.CSSProperties
       }
     >
@@ -45,7 +45,9 @@ export function Sheet({ children, expanded, header }: Props) {
       >
         {header}
       </Header>
-      <div className="block overflow-y-auto p-5 bg-background">{children}</div>
+      <div className="block overflow-y-auto px-5 pb-5 pt-3 bg-background">
+        {children}
+      </div>
     </div>
   );
 }

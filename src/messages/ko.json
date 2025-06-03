@@ -1,0 +1,64 @@
+{
+  "common": {
+    "loading": "로딩 중...",
+    "location": "위치",
+    "settings": "설정",
+    "language": "언어"
+  },
+  "map": {
+    "eventsLoading": "이벤트 로딩 중...",
+    "locationError": "위치를 가져올 수 없습니다",
+    "clickToClose": "빈 공간을 클릭하여 닫기"
+  },
+  "controls": {
+    "zoomIn": "확대",
+    "zoomOut": "축소",
+    "location": "내 위치",
+    "settings": "설정"
+  },
+  "drawer": {
+    "events": "이벤트",
+    "title": "어디를 방문할까요?",
+    "subtitle": "{count}개의 장소를 찾았어요",
+    "noEvents": "선택된 이벤트가 없습니다",
+    "date": "날짜",
+    "district": "지역",
+    "description": "설명",
+    "references": "참고 자료"
+  },
+  "yearSlider": {
+    "title": "연도 범위",
+    "from": "시작",
+    "to": "끝"
+  },
+  "language": {
+    "korean": "한국어",
+    "english": "English"
+  },
+  "tabs": {
+    "home": "홈",
+    "myEvents": "저장됨"
+  },
+  "myEvents": {
+    "title": "저장된 이벤트",
+    "subtitle": "{count}개의 저장된 장소",
+    "loading": "로딩 중...",
+    "fetchError": "저장된 이벤트를 불러오는데 실패했습니다",
+    "empty": {
+      "title": "저장된 이벤트가 없습니다",
+      "description": "관심있는 역사적 이벤트를 별표를 눌러 저장해보세요!"
+    }
+  },
+  "audio": {
+    "play": "재생",
+    "pause": "일시정지",
+    "loading": "로딩 중...",
+    "error": "오디오를 로드할 수 없습니다",
+    "playError": "재생 중 오류가 발생했습니다",
+    "mute": "음소거",
+    "unmute": "음소거 해제",
+    "volume": "볼륨",
+    "currentTime": "현재 시간",
+    "duration": "총 시간"
+  }
+}
